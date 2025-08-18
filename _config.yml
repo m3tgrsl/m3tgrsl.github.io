@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: m3tgrsl
 
-tagline: A text-focused Jekyll theme # it will display as the subtitle
+tagline: #Siber güvenlik, pentest ve mühendislik üzerine notlar # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -224,3 +224,36 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
+
+# Theme Settings
+theme: jekyll-theme-chirpy
+
+# Renk modunu seç: 'light', 'dark', 'auto'
+color_scheme: auto
+
+# Light mode colors
+light_colors:
+  primary: "#1e90ff"
+  accent: "#ff6347"
+  background: "#DFF0F3"
+  surface: "#f8f8f8"
+  text: "#222222"
+  secondary_text: "#555555"
+  border: "#e0e0e0"
+  link_hover: "#0056b3"
+
+# Dark mode colors
+dark_colors:
+  primary: "#1e90ff"
+  accent: "#ff6347"
+  background: "#121212"
+  surface: "#1e1e1e"
+  text: "#e0e0e0"
+  secondary_text: "#b0b0b0"
+  border: "#2c2c2c"
+  link_hover: "#63b3ed"
+
+# Footnote backlink örneği
+footnote_backlink: "&#8617;&#xfe0e;"
+
