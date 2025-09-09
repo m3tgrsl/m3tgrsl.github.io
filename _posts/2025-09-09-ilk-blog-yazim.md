@@ -37,7 +37,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 [Google Cloud](https://cloud.google.com/)
 
-![Resim 1](/assets/images/1.resim.jpg)
+![Resim 1](1.resim.jpg)
 
 ### SSH Ayarları
 
@@ -804,8 +804,8 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 
 Terminal üzerindeki kurulum işlemleri bittikten sonra "systemctl reset httpd" komutu ile Apache web server resetleyip tarayıcımızdan http://34.69.43.29/owncloud/ (ip adresimiz Google Clouddaki harici ipmiz) yazarak giriş yapıyoruz. Giriş yaptıktan sonra kullanıcı ve veri tabanı bilgilerini girerek kurulum işlemini bitiriyoruz.
 
-![Resim 2](/assets/images/2.resim.jpg)
-![Resim 3](/assets/images/3.resim.jpg)
+![Resim 2](2.resim.jpg)
+![Resim 3](3.resim.jpg)
 
 Kaynaklar
 =========
