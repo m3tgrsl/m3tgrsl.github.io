@@ -171,7 +171,39 @@ Gereksinim listemizde hazır olduğuna göre artık gereksinimleri indirip kurma
     
     Dependency Installed:
       libxml2-python.x86_64 0:2.9.1-6.el7.5                           python-chardet.noarch 0:2.2.1-3.el7                           python-kitchen.noarch 0:1.1.1-5.el7                          
-    
+    test
+    [root@owncloud m3t]# yum install epel-release yum-utils -y
+Loaded plugins: fastestmirror
+Determining fastest mirrors
+epel/x86_64/metalink                                                                                   |  16 kB  00:00:00     
+ * base: mirrors.gigenet.com
+ * epel: mirror.genesisadaptive.com
+ * extras: repos.forethought.net
+ * updates: ftp.ussg.iu.edu
+base                                                                                                   | 3.6 kB  00:00:00     
+epel                                                                                                   | 4.7 kB  00:00:00     
+extras                                                                                                 | 2.9 kB  00:00:00     
+google-cloud-sdk/signature                                                                             |  844 B  00:00:00     
+google-cloud-sdk/signature                                                                             | 1.4 kB  00:00:00 !!! 
+google-compute-engine/signature                                                                        |  844 B  00:00:00     
+google-compute-engine/signature                                                                        | 1.4 kB  00:00:00 !!! 
+updates                                                                                                | 2.9 kB  00:00:00     
+(1/9): base/7/x86_64/group_gz                                                                          | 153 kB  00:00:00     
+(2/9): base/7/x86_64/primary_db                                                                        | 6.1 MB  00:00:00     
+
+==============================================================================================================================================================================================
+Install  1 Package (+3 Dependent packages)
+
+Total download size: 863 k
+Installed size: 4.3 M
+Downloading packages:
+(1/4): libxml2-python-2.9.1-6.el7.5.x86_64.rpm                                                         | 247 kB  00:00:00     
+(2/4): python-chardet-2.2.1-3.el7.noarch.rpm                                                           | 227 kB  00:00:00     
+(3/4): yum-utils-1.1.31-54.el7_8.noarch.rpm                                                            | 122 kB  00:00:00     
+(4/4): python-kitchen-1.1.1-5.el7.noarch.rpm                                                           | 267 kB  00:00:00     
+---------------------------------------------------------------------------------------------------------------------------------------
+
+    test
 
 *   "yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y" komutu ile güncel repoyu çekiyoruz.
 
