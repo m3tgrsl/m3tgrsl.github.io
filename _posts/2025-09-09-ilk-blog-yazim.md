@@ -37,7 +37,8 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 [Google Cloud](https://cloud.google.com/)
 
-![Resim 1](1.resim.jpg)
+![İlk Resim](/assets/images/1.resim.jpg)
+
 
 ### SSH Ayarları
 
