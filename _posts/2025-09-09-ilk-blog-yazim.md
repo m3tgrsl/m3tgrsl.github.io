@@ -467,8 +467,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 *   MariaDB \[(none)\]> SHOW GRANTS FOR user@localhost; Yetkileri verdikten sonra tekrar kontrol ediyoruz.
 
-*   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.
-    
+*   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.    
     [root@owncloud m3t]# mysql
     Welcome to the MariaDB monitor.  Commands end with ; or \\g.
     Your MariaDB connection id is 9
