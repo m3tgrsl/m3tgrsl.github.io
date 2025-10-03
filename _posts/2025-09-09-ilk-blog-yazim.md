@@ -73,6 +73,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
     +----[SHA256]-----+
     
 ```
+
 *   Linux terminalimde ssh-keygen ile SSH keylerimi oluşturdum.
 
 *   Owncloud1 adında bir key oluşturdum. Boş bırakırsak /home/kullanıcı/. ssh/ altına id\_rsa. pub adında Public key hem de id\_rsa adında Private key oluşturur.
