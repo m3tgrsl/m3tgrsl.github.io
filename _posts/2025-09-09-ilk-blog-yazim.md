@@ -1,4 +1,6 @@
-    body { padding: 25px; background-color: #282b34; color: #efefef; font-size: 18px; } pre { margin: 20px; padding: 20px; color: #aaa; background-color: #222; white-space: pre; text-shadow: 0 1px 0 #000; border-radius: 15px; border-bottom: 1px solid #555; box-shadow: 0 1px 5px rgba(0,0,0,0.4) inset, 0 0 20px rgba(0,0,0,0.2) inset; font: 16px/24px 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace; } .dark-mode { background-color: #f2e4e2; color: black; } .container img { width: 100%; height: auto; } .container .btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); background-color: #f1f1f1; color: black; font-size: 16px; padding: 16px 30px; border: none; cursor: pointer; border-radius: 5px; text-align: center; } .container .btn:hover { background-color: black; color: white; } .container2 { position: relative; width: 100%; max-width: 400px; } .container { margin: 0 auto; width:960px; } Dark Mode Light Mode
+layout: home
+title: İlk Blog Yazım
+date: 2025-10-03
 
 CentOS 7'ye OwnCloud Server Kurulumu
 ====================================
