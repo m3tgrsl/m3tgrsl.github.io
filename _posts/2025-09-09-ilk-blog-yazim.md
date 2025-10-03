@@ -7,6 +7,13 @@ categories: [Linux]
 
 [![asciicast](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.svg)](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w)
 
+<div>
+  <script id="asciicast-hKVUKURAGkYOESkLMHaDmkH1w"
+          src="https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.js"
+          async>
+  </script>
+</div>
+
 Bu yazımda GNU/Linux sistem yönetimi çalışmalarımda öğrendiklerimi pekiştirmek amacıyla Google Cloud'dan ücretsiz olarak kiraladığım Centos Linux'un içine kurduğum Owncloud serverinden bahsedeceğim.
 
 OwnCloud Nedir?
