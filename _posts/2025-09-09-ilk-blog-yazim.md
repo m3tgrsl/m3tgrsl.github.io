@@ -80,7 +80,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Keylere parola vermeden işlem yaptım ve çıktım.
 
- ```fish 
+```console
     $ cat owncloud1.pub
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDT7dRdtznSP6QUSFmyeQRj25S+7EmrjoBEyt7MiXzwsP6MkRRRPy8oFHMzvgf+he3acdgRpXP3wW7ewBtXhxu2DMbZp53sAnxgDa5nvC8E/2yNc90KEZQABrPDEQDvrGFF+qSPFCl7QpR9KnABoRii10cwGGiqIwNzhUMt5fWXRNweTdstR/uAj607a9rDzFB2TNMSYelw57dzRzM9m763jUzNwl/kfl46k7/VZ9PMr7Sogrb+V0zf17iVHai01vZU8zEB2fu9RBEb2KqJJ4dtFGSsn4XDKeEPHTmn8xzpauixVi0klFYhGIaBJ3TrkuOoJEg2ei9Xg7ZX1MshJV4ceTh6Xy4l1iksTIvXDyw8rZ+3UXwSy008FkYhQIlTiZjw1LAKJVJIiae6I+3YpTn9vEx1ibEmRFPr4CdDtXt4/nkNIb0myk1PM+lkV7TtrvbWy+Cn2Htbt/LvQQ7RqB4h+5rQw+toCndQMUlpNjVl10a/tVfGQsMD/ML2F1+iHf0= m3t@manjaro
     $    
@@ -88,7 +88,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Owncloud1. pub Public keyi kopyalayalım ve Googlecloud'daki SSH anahtarları yerine yapıştıralım ve kaydedelim.
 
-```bash  
+```console
 
     $ ssh -i owncloud1 m3t@34.69.43.29
     
@@ -125,7 +125,7 @@ Gereksinim listemizde hazır olduğuna göre artık gereksinimleri indirip kurma
 
 *   "yum install yum-utils" komutu ile yum-config-manager’ı kullanmak için yum-utils paketini kuruyoruz ,"-y" komutunu ise bizden yes komut istememesi için veriyoruz.
 
-```bash
+```console
     
     [root@owncloud m3t]# yum install epel-release yum-utils -y
     Loaded plugins: fastestmirror
@@ -212,7 +212,7 @@ Downloading packages:
 
 *   "yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y" komutu ile güncel repoyu çekiyoruz.
 
-```bash
+```console
     
     [root@owncloud m3t]#yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
     Loaded plugins: fastestmirror
@@ -279,7 +279,7 @@ Downloading packages:
 
 *   "yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y" php ve diğer gerekli bağımlılıkları ve httpd (Apache Web Server) kuruyoruz.
 
-```bash 
+```console
     root@owncloud m3t]# yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -338,7 +338,7 @@ Downloading packages:
 
 *   "yum install mariadb-server mariadb -y" komut ile MariaDB ve MariaDB serverini kuruyoruz.
 
-```bash
+```console
     [root@owncloud m3t]# yum install mariadb-server mariadb -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -431,7 +431,7 @@ Downloading packages:
 [Mariadb secure installation](https://mariadb.com/kb/en/mysql_secure_installation/)
 
 
-```bash
+```console
     
     [root@owncloud m3t]# mysql_secure_installation
     
@@ -517,7 +517,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 *   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.  
 
-```bash
+```console
 
     [root@owncloud m3t]# mysql
     Welcome to the MariaDB monitor.  Commands end with ; or \\g.
@@ -608,7 +608,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 [owncloud kurulum dosyası](https://owncloud.com/download-server/)
 
-```bash
+```console
 
     
     [root@owncloud m3t]#sudo rpm --import https://download.owncloud.org/download/repositories/production/CentOS_7/repodata/repomd.xml.key
@@ -693,7 +693,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 *   "firewall-cmd --list-all" Firewall sistemindeki izinleri tekrardan kontrol ediyoruz.
 
-```bash
+```console
   
      [root@owncloud m3t]# firewall-cmd --list-all
     trusted (active)
@@ -739,7 +739,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 *   "chown -R apache.apache /var/www/html/owncloud/" Owncloud dosyasının sahibini ve grubunu apache olarak değiştiriyoruz.
 
-```bash
+```console
     [root@owncloud m3t]# chown -R apache.apache /var/www/html/owncloud/
     [root@owncloud m3t]#
 ```   
@@ -769,7 +769,7 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 [selinux komutları](https://doc.owncloud.com/server/admin_manual/installation/selinux_configuration.html)
 
 
-```bash
+```console
     
     [root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/data'
     bash: semanage: command not found
