@@ -48,7 +48,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Düzenle sayfasında SSH Anahtarlarını seçelim.
 
-```bash
+```fish
     
     $ ssh-keygen
     Generating public/private rsa key pair.
