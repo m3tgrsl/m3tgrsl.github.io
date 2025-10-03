@@ -5,5 +5,5 @@ title: "Ana Sayfa"
 
 # Merhaba, burası ana sayfa
 
-[İlk Blog Yazısı](/posts/2025-10-03-ilk-blog-yazim.html)
+[İlk Blog Yazısı](/posts/2025-09-09-ilk-blog-yazim.md)
 
