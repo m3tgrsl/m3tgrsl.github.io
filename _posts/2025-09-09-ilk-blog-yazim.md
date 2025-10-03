@@ -5,9 +5,9 @@ tag: [Linux]
 categories: [Linux]
 ---
 
-# CentOS 7'ye OwnCloud Server Kurulumu
 
-CentOS 7'ye OwnCloud Server Kurulumu
+
+# CentOS 7'ye OwnCloud Server Kurulumu
 ====================================
 
 Bu yazımda GNU/Linux sistem yönetimi çalışmalarımda öğrendiklerimi pekiştirmek amacıyla Google Cloud'dan ücretsiz olarak kiraladığım Centos Linux'un içine kurduğum Owncloud serverinden bahsedeceğim.
