@@ -48,6 +48,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Düzenle sayfasında SSH Anahtarlarını seçelim.
 
+```bash
     
     $ ssh-keygen
     Generating public/private rsa key pair.
@@ -78,15 +79,15 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Keylere parola vermeden işlem yaptım ve çıktım.
 
-    
+  ```bash  
     $ cat owncloud1.pub
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDT7dRdtznSP6QUSFmyeQRj25S+7EmrjoBEyt7MiXzwsP6MkRRRPy8oFHMzvgf+he3acdgRpXP3wW7ewBtXhxu2DMbZp53sAnxgDa5nvC8E/2yNc90KEZQABrPDEQDvrGFF+qSPFCl7QpR9KnABoRii10cwGGiqIwNzhUMt5fWXRNweTdstR/uAj607a9rDzFB2TNMSYelw57dzRzM9m763jUzNwl/kfl46k7/VZ9PMr7Sogrb+V0zf17iVHai01vZU8zEB2fu9RBEb2KqJJ4dtFGSsn4XDKeEPHTmn8xzpauixVi0klFYhGIaBJ3TrkuOoJEg2ei9Xg7ZX1MshJV4ceTh6Xy4l1iksTIvXDyw8rZ+3UXwSy008FkYhQIlTiZjw1LAKJVJIiae6I+3YpTn9vEx1ibEmRFPr4CdDtXt4/nkNIb0myk1PM+lkV7TtrvbWy+Cn2Htbt/LvQQ7RqB4h+5rQw+toCndQMUlpNjVl10a/tVfGQsMD/ML2F1+iHf0= m3t@manjaro
-    $
-    
+    $    
+```
 
 *   Owncloud1. pub Public keyi kopyalayalım ve Googlecloud'daki SSH anahtarları yerine yapıştıralım ve kaydedelim.
 
-    
+  ```bash  
     $ ssh -i owncloud1 m3t@34.69.43.29
     
 
@@ -96,6 +97,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
     m3t@owncloud2 ~]$ sudo passwd
     Changing password for user root.
     New password:
+```
     
 
 *   Sisteme girdikten sonra "sudo passwd " komutu ile root parolası oluşturalım Arrtık ssh ile sistemimize girip OwnCloud kurabiliriz.
@@ -121,6 +123,7 @@ Gereksinim listemizde hazır olduğuna göre artık gereksinimleri indirip kurma
 
 *   "yum install yum-utils" komutu ile yum-config-manager’ı kullanmak için yum-utils paketini kuruyoruz ,"-y" komutunu ise bizden yes komut istememesi için veriyoruz.
 
+```bash
     
     [root@owncloud m3t]# yum install epel-release yum-utils -y
     Loaded plugins: fastestmirror
@@ -171,8 +174,8 @@ Gereksinim listemizde hazır olduğuna göre artık gereksinimleri indirip kurma
     
     Dependency Installed:
       libxml2-python.x86_64 0:2.9.1-6.el7.5                           python-chardet.noarch 0:2.2.1-3.el7                           python-kitchen.noarch 0:1.1.1-5.el7                          
-    test
-    [root@owncloud m3t]# yum install epel-release yum-utils -y
+    
+[root@owncloud m3t]# yum install epel-release yum-utils -y
 Loaded plugins: fastestmirror
 Determining fastest mirrors
 epel/x86_64/metalink                                                                                   |  16 kB  00:00:00     
@@ -203,10 +206,11 @@ Downloading packages:
 (4/4): python-kitchen-1.1.1-5.el7.noarch.rpm                                                           | 267 kB  00:00:00     
 ---------------------------------------------------------------------------------------------------------------------------------------
 
-    test
+```
 
 *   "yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y" komutu ile güncel repoyu çekiyoruz.
 
+```bash
     
     [root@owncloud m3t]#yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
     Loaded plugins: fastestmirror
@@ -269,11 +273,12 @@ Downloading packages:
        basearch
     username 
     
+```
 
 *   "yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y" php ve diğer gerekli bağımlılıkları ve httpd (Apache Web Server) kuruyoruz.
 
     
-    
+  ```bash  
     root@owncloud m3t]# yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -325,13 +330,14 @@ Downloading packages:
     
     Dec 21 18:53:47 owncloud systemd[1]: Starting The Apache HTTP Server...
     Dec 21 18:53:47 owncloud systemd[1]: Started The Apache HTTP Server.
-    
+
+```
 
 ### MariaDB - MariaDB Server Kurulumu
 
 *   "yum install mariadb-server mariadb -y" komut ile MariaDB ve MariaDB serverini kuruyoruz.
 
-    
+    ```bash
     [root@owncloud m3t]# yum install mariadb-server mariadb -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -367,7 +373,8 @@ Downloading packages:
       libaio.x86_64 0:0.3.109-13.el7           perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7        perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7        perl-DBD-MySQL.x86_64 0:4.023-6.el7       
       perl-DBI.x86_64 0:1.627-4.el7            perl-Data-Dumper.x86_64 0:2.145-3.el7               perl-IO-Compress.noarch 0:2.061-2.el7              perl-Net-Daemon.noarch 0:0.48-5.el7       
       perl-PlRPC.noarch 0:0.2020-14.el7  
-    
+    ```
+
 
 *   "systemctl start mariadb.service" komutu ile MariaDB servisini başlatıyoruz.
 
@@ -377,7 +384,7 @@ Downloading packages:
 
 [Apache server kurlumu](https://httpd.apache.org/docs/2.4/install.html)
 
-    
+    ```bash
     [root@owncloud m3t]# systemctl start mariadb.service
     [root@owncloud m3t]# systemctl enable mariadb.service
     Created symlink from /etc/systemd/system/multi-user.target.wants/mariadb.service to /usr/lib/systemd/system/mariadb.service.
@@ -403,6 +410,7 @@ Downloading packages:
     Dec 21 19:05:01 owncloud systemd[1]: Started MariaDB database server.
     
     [root@owncloud m3t]#
+    ```
     
 
 *   "mysql\_secure\_installation" bu scprit kurulum sonrasında bazı varsayılan ayarlardan kurtulmamızı sağlar.
