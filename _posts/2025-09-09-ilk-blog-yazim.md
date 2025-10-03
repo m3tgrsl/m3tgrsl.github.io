@@ -1,4 +1,4 @@
-layout: home
+---
 title: İlk Blog Yazım
 date: 2025-10-03
 
