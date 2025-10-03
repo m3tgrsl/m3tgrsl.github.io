@@ -1,6 +1,8 @@
 ---
-title: İlk Blog Yazım
+title: "İlk Blog Yazım"
 date: 2025-10-03
+tag: [linux]
+---
 
 CentOS 7'ye OwnCloud Server Kurulumu
 ====================================
