@@ -904,5 +904,3 @@ Kaynaklar
 [https://www.linuxtechi.com/steps-to-install-owncloud-on-centos-7](https://www.linuxtechi.com/steps-to-install-owncloud-on-centos-7)
 
 * * *
-
-// Dark Mode Toggle function toggleDarkMode() { var element = document.body; if (!element.classList.contains("dark-mode")) { element.classList.add("dark-mode"); element.classList.remove("light-mode"); element.style.backgroundColor = "#f3e3e3"; // Dark mode arka plan rengi } } // Light Mode Toggle function toggleLightMode() { var element = document.body; if (!element.classList.contains("light-mode")) { element.classList.add("light-mode"); element.classList.remove("dark-mode"); element.style.backgroundColor = "#282b34"; // Light mode arka plan rengi } }
