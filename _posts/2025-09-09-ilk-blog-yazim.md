@@ -429,6 +429,10 @@ Downloading packages:
 
 [Mariadb secure installation](https://mariadb.com/kb/en/mysql_secure_installation/)
 
+
+```bash
+
+
     
     [root@owncloud m3t]# mysql_secure_installation
     
@@ -486,6 +490,8 @@ Downloading packages:
     installation should now be secure.
     
     Thanks for using MariaDB!
+
+```
     
 
 ### OwnCloud İçin Veritabanının Oluşturulması
@@ -510,7 +516,10 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 
 *   MariaDB \[(none)\]> SHOW GRANTS FOR user@localhost; Yetkileri verdikten sonra tekrar kontrol ediyoruz.
 
-*   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.    
+*   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.  
+
+```bash
+
     [root@owncloud m3t]# mysql
     Welcome to the MariaDB monitor.  Commands end with ; or \\g.
     Your MariaDB connection id is 9
@@ -583,7 +592,8 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
     
     MariaDB [(none)]> exit
     Bye
-    
+
+```
 
 ### OwnCloud'ın Kurulumu
 
@@ -598,6 +608,8 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 [owncloud kurlumu](https://download.owncloud.org/download/repositories/production/owncloud)
 
 [owncloud kurulum dosyası](https://owncloud.com/download-server/)
+
+```bash
 
     
     [root@owncloud m3t]#sudo rpm --import https://download.owncloud.org/download/repositories/production/CentOS_7/repodata/repomd.xml.key
@@ -666,7 +678,9 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
     
     Complete!
     [root@owncloud m3t]#
-    
+
+```
+
 
 ### Firewall izinleri
 
@@ -679,8 +693,10 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 *   "firewall-cmd --reload" Firewall'u güncelliyoruz ki verdiğimiz izinler kaydedilsin.
 
 *   "firewall-cmd --list-all" Firewall sistemindeki izinleri tekrardan kontrol ediyoruz.
+  
 
-    
+    ```bash
+
      [root@owncloud m3t]# firewall-cmd --list-all
     trusted (active)
       target: ACCEPT
@@ -716,16 +732,17 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
       source-ports: 
       icmp-blocks: 
       rich rules:
+    ```
       
 
 ### OwnCloud Dosya İzinleri
 
 *   "chown -R apache.apache /var/www/html/owncloud/" Owncloud dosyasının sahibini ve grubunu apache olarak değiştiriyoruz.
 
-    
+```bash
     [root@owncloud m3t]# chown -R apache.apache /var/www/html/owncloud/
     [root@owncloud m3t]#
-      
+```   
 
 ### SELinux' Konfigurasyonu
 
@@ -751,6 +768,8 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 
 [selinux komutları](https://doc.owncloud.com/server/admin_manual/installation/selinux_configuration.html)
 
+
+```bash
     
     [root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/data'
     bash: semanage: command not found
@@ -839,7 +858,8 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
     [root@owncloud m3t]# restorecon '/var/www/html/owncloud/apps'
     [root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/apps-external(/.*)?'
     [root@owncloud m3t]# restorecon -Rv '/var/www/html/owncloud/'
-    
+
+```
 
 ### Tarayıcı üzerindeki işlemler
 
