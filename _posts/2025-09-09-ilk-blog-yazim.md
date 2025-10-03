@@ -5,15 +5,6 @@ tag: [Linux]
 categories: [Linux]
 ---
 
-[![asciicast](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.svg)](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w)
-
-<div>
-  <script id="asciicast-hKVUKURAGkYOESkLMHaDmkH1w"
-          src="https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.js"
-          async>
-  </script>
-</div>
-
 <div id="asciinema-player">
   <script id="asciicast-hKVUKURAGkYOESkLMHaDmkH1w"
           src="https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.js"
