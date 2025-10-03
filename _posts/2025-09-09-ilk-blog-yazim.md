@@ -72,14 +72,14 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
     |      .+X&@+     |
     +----[SHA256]-----+
     
-
+```
 *   Linux terminalimde ssh-keygen ile SSH keylerimi oluşturdum.
 
 *   Owncloud1 adında bir key oluşturdum. Boş bırakırsak /home/kullanıcı/. ssh/ altına id\_rsa. pub adında Public key hem de id\_rsa adında Private key oluşturur.
 
 *   Keylere parola vermeden işlem yaptım ve çıktım.
 
-  ```bash  
+ ```bash  
     $ cat owncloud1.pub
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDT7dRdtznSP6QUSFmyeQRj25S+7EmrjoBEyt7MiXzwsP6MkRRRPy8oFHMzvgf+he3acdgRpXP3wW7ewBtXhxu2DMbZp53sAnxgDa5nvC8E/2yNc90KEZQABrPDEQDvrGFF+qSPFCl7QpR9KnABoRii10cwGGiqIwNzhUMt5fWXRNweTdstR/uAj607a9rDzFB2TNMSYelw57dzRzM9m763jUzNwl/kfl46k7/VZ9PMr7Sogrb+V0zf17iVHai01vZU8zEB2fu9RBEb2KqJJ4dtFGSsn4XDKeEPHTmn8xzpauixVi0klFYhGIaBJ3TrkuOoJEg2ei9Xg7ZX1MshJV4ceTh6Xy4l1iksTIvXDyw8rZ+3UXwSy008FkYhQIlTiZjw1LAKJVJIiae6I+3YpTn9vEx1ibEmRFPr4CdDtXt4/nkNIb0myk1PM+lkV7TtrvbWy+Cn2Htbt/LvQQ7RqB4h+5rQw+toCndQMUlpNjVl10a/tVfGQsMD/ML2F1+iHf0= m3t@manjaro
     $    
@@ -87,7 +87,8 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Owncloud1. pub Public keyi kopyalayalım ve Googlecloud'daki SSH anahtarları yerine yapıştıralım ve kaydedelim.
 
-  ```bash  
+```bash  
+
     $ ssh -i owncloud1 m3t@34.69.43.29
     
 
@@ -277,8 +278,7 @@ Downloading packages:
 
 *   "yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y" php ve diğer gerekli bağımlılıkları ve httpd (Apache Web Server) kuruyoruz.
 
-    
-  ```bash  
+```bash 
     root@owncloud m3t]# yum install httpd php php-mysql php-intl sqlite php-dom php-mbstring php-gd php-pdo php-json php-xml php-zip php-gd curl php-curl php-mcrypt php-pear -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -337,7 +337,7 @@ Downloading packages:
 
 *   "yum install mariadb-server mariadb -y" komut ile MariaDB ve MariaDB serverini kuruyoruz.
 
-    ```bash
+```bash
     [root@owncloud m3t]# yum install mariadb-server mariadb -y
     Loaded plugins: fastestmirror
     Loading mirror speeds from cached hostfile
@@ -410,7 +410,7 @@ Downloading packages:
     Dec 21 19:05:01 owncloud systemd[1]: Started MariaDB database server.
     
     [root@owncloud m3t]#
-    ```
+```
     
 
 *   "mysql\_secure\_installation" bu scprit kurulum sonrasında bazı varsayılan ayarlardan kurtulmamızı sağlar.
@@ -431,8 +431,6 @@ Downloading packages:
 
 
 ```bash
-
-
     
     [root@owncloud m3t]# mysql_secure_installation
     
@@ -693,10 +691,9 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 *   "firewall-cmd --reload" Firewall'u güncelliyoruz ki verdiğimiz izinler kaydedilsin.
 
 *   "firewall-cmd --list-all" Firewall sistemindeki izinleri tekrardan kontrol ediyoruz.
+
+```bash
   
-
-    ```bash
-
      [root@owncloud m3t]# firewall-cmd --list-all
     trusted (active)
       target: ACCEPT
@@ -732,7 +729,7 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
       source-ports: 
       icmp-blocks: 
       rich rules:
-    ```
+```
       
 
 ### OwnCloud Dosya İzinleri
