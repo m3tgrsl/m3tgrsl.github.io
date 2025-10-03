@@ -734,8 +734,6 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
       rich rules:
 ```
 
-  ![İlk Resim](/assets/images/2.resim.jpg)
-
 
 ### OwnCloud Dosya İzinleri
 
@@ -866,6 +864,10 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 ### Tarayıcı üzerindeki işlemler
 
 Terminal üzerindeki kurulum işlemleri bittikten sonra "systemctl reset httpd" komutu ile Apache web server resetleyip tarayıcımızdan http://34.69.43.29/owncloud/ (ip adresimiz Google Clouddaki harici ipmiz) yazarak giriş yapıyoruz. Giriş yaptıktan sonra kullanıcı ve veri tabanı bilgilerini girerek kurulum işlemini bitiriyoruz.
+
+![İlk Resim](/assets/images/2.resim.jpg)
+
+![İlk Resim](/assets/images/3.resim.jpg)
 
 
 
