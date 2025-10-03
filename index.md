@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Ana Sayfa"
+title: Ana Sayfa
 ---
 
 # Merhaba, burası ana sayfa
