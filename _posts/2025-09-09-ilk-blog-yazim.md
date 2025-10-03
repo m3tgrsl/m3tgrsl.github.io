@@ -468,7 +468,6 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
 *   MariaDB \[(none)\]> SHOW GRANTS FOR user@localhost; Yetkileri verdikten sonra tekrar kontrol ediyoruz.
 
 *   Kullanıcımızı ve veri tabanımızı oluşturduğumuz için "exit" yazıp bu işlemlerden çıkıyoruz.
-
     
     [root@owncloud m3t]# mysql
     Welcome to the MariaDB monitor.  Commands end with ; or \\g.
@@ -804,8 +803,7 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 
 Terminal üzerindeki kurulum işlemleri bittikten sonra "systemctl reset httpd" komutu ile Apache web server resetleyip tarayıcımızdan http://34.69.43.29/owncloud/ (ip adresimiz Google Clouddaki harici ipmiz) yazarak giriş yapıyoruz. Giriş yaptıktan sonra kullanıcı ve veri tabanı bilgilerini girerek kurulum işlemini bitiriyoruz.
 
-![Resim 2](2.resim.jpg)
-![Resim 3](3.resim.jpg)
+
 
 Kaynaklar
 =========
