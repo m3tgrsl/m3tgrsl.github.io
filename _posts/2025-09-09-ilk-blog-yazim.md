@@ -5,6 +5,8 @@ tag: [Linux]
 categories: [Linux]
 ---
 
+[![asciicast](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w.svg)](https://asciinema.org/a/hKVUKURAGkYOESkLMHaDmkH1w)
+
 Bu yazımda GNU/Linux sistem yönetimi çalışmalarımda öğrendiklerimi pekiştirmek amacıyla Google Cloud'dan ücretsiz olarak kiraladığım Centos Linux'un içine kurduğum Owncloud serverinden bahsedeceğim.
 
 OwnCloud Nedir?
