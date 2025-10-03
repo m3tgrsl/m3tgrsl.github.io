@@ -79,7 +79,7 @@ Ben 3 ay 300$ dolar kupon hakkı ile kiraladığım Google Cloud'a kurulum gerç
 
 *   Keylere parola vermeden işlem yaptım ve çıktım.
 
- ```bash  
+ ```fish 
     $ cat owncloud1.pub
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDT7dRdtznSP6QUSFmyeQRj25S+7EmrjoBEyt7MiXzwsP6MkRRRPy8oFHMzvgf+he3acdgRpXP3wW7ewBtXhxu2DMbZp53sAnxgDa5nvC8E/2yNc90KEZQABrPDEQDvrGFF+qSPFCl7QpR9KnABoRii10cwGGiqIwNzhUMt5fWXRNweTdstR/uAj607a9rDzFB2TNMSYelw57dzRzM9m763jUzNwl/kfl46k7/VZ9PMr7Sogrb+V0zf17iVHai01vZU8zEB2fu9RBEb2KqJJ4dtFGSsn4XDKeEPHTmn8xzpauixVi0klFYhGIaBJ3TrkuOoJEg2ei9Xg7ZX1MshJV4ceTh6Xy4l1iksTIvXDyw8rZ+3UXwSy008FkYhQIlTiZjw1LAKJVJIiae6I+3YpTn9vEx1ibEmRFPr4CdDtXt4/nkNIb0myk1PM+lkV7TtrvbWy+Cn2Htbt/LvQQ7RqB4h+5rQw+toCndQMUlpNjVl10a/tVfGQsMD/ML2F1+iHf0= m3t@manjaro
     $    
