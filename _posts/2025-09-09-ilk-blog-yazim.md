@@ -2,7 +2,7 @@
 title: "CentOS 7’ye OwnCloud Server Kurulumu"
 date: 2021-01-03
 tag: [Linux]
-categories: [linux]
+categories: [Linux]
 ---
 
 <div id="asciinema-player">
