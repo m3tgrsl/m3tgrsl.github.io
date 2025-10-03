@@ -730,7 +730,9 @@ Veri tabanımızı ve kullanıcımızı oluşturmak için MariaDB başlatıyoruz
       icmp-blocks: 
       rich rules:
 ```
-      
+
+  ![İlk Resim](/assets/images/2.resim.jpg)
+
 
 ### OwnCloud Dosya İzinleri
 
